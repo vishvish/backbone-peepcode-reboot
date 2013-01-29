@@ -3,7 +3,7 @@ define([
     'underscore',
     'backbone',
     'tpl!templates/album-template.ejs'
-], function ($, _, tpl)
+], function ($, _, Backbone, tpl)
 {
     var AlbumView = Backbone.View.extend({
         template  : tpl,
@@ -13,8 +13,6 @@ define([
         initialize : function ()
         {
             _.bindAll(this, 'render');
-            // this.model.bind('change', this.render);
-
         },
 
         render : function ()
