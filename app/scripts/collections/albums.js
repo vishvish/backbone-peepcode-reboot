@@ -7,7 +7,7 @@ define([
 {
     var Albums = Backbone.Collection.extend({
         model : Album,
-        url   : 'http://localhost:9292/albums'
+        url   : '/albums.json'
     });
     return Albums;
 });
