@@ -1,0 +1,9 @@
+<button class="queue add"><img src="/images/add.png"/></button>
+<button class="queue remove"><img src="/images/remove.png"/></button>
+<span class="album-title"><%= title %></span>
+<span class="artist-name"><%= artist %></span>
+<ol class="tracks">
+    <% _.each(tracks, function(track) { %>
+    <li><%= track.title %></li>
+    <% }); %>
+</ol>
